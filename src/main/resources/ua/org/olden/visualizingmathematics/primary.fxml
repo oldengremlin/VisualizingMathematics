@@ -75,7 +75,7 @@
                     <children>
                         <TextArea fx:id="operationResult" editable="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0">
                             <font>
-                                <Font name="DejaVu Sans Mono Oblique" size="13.0" />
+                                <Font name="DejaVu Sans Mono" size="13.0" />
                             </font>
                         </TextArea>
                     </children>
