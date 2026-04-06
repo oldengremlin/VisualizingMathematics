@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import javafx.application.Platform;
+import javafx.scene.text.Font;
 
 /**
  * JavaFX App
@@ -19,6 +20,9 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+
+        Font.loadFont(App.class.getResourceAsStream("fonts/DejaVu Sans Mono Oblique.ttf"), 13);
+
         //scene = new Scene(loadFXML("primary"), 800, 600);
         scene = new Scene(loadFXML("primary"));
 
