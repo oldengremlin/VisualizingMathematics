@@ -63,11 +63,6 @@ public class PrimaryController {
     private Pattern IS_NUMBER = Pattern.compile("^-?\\d+(\\.\\d+)?$");
 
     @FXML
-    private void switchToSecondary() throws IOException {
-        App.setRoot("secondary");
-    }
-
-    @FXML
     private void quit() {
         App.quit();
     }

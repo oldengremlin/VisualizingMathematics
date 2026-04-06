@@ -44,11 +44,6 @@ public class App extends Application {
 
     public static void quit() {
         Platform.exit();
-
-        Thread start = new Thread(() -> {
-            System.exit(0);
-        });
-
         System.exit(0);
     }
 
