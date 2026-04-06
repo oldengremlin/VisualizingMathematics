@@ -6,6 +6,7 @@ package ua.org.olden.visualizingmathematics;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.DialogPane;
 import javafx.stage.Stage;
 
 /**
@@ -16,11 +17,15 @@ import javafx.stage.Stage;
 public class AboutController {
 
     @FXML
+    private DialogPane dialog;
+
+    @FXML
     private Button closeBtn;
 
     @FXML
     private void close() {
-        ((Stage) closeBtn.getScene().getWindow()).close();
+        ((Stage) dialog.getScene().getWindow()).close();
+        //((Stage) closeBtn.getScene().getWindow()).close();
     }
 
 }

@@ -10,10 +10,14 @@ import javafx.scene.control.DialogPane;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
 import ua.org.olden.stringnumeric.StringNumeric;
 import ua.org.olden.stringnumeric.StringNumericRecord;
 
 public class PrimaryController {
+
+    @FXML
+    private VBox mainWindows;
 
     @FXML
     private TextField value_a;
@@ -76,7 +80,7 @@ public class PrimaryController {
         DialogPane dialogPane = loader.load();
         Dialog<Void> dialog = new Dialog<>();
         dialog.setDialogPane(dialogPane);
-        dialog.initOwner(value_a.getScene().getWindow());
+        dialog.initOwner(mainWindows.getScene().getWindow());
         dialog.show();
     }
 
