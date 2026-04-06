@@ -6,28 +6,24 @@
     <version>1.0-SNAPSHOT</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>11</maven.compiler.release>
+        <maven.compiler.release>21</maven.compiler.release>
     </properties>
     <dependencies>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>25.0.2</version>
+            <version>26</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>25.0.2</version>
+            <version>26</version>
         </dependency>
         <dependency>
             <groupId>ua.org.olden</groupId>
             <artifactId>StringNumeric</artifactId>
-            <version>1.0-SNAPSHOT</version> 
-        </dependency>
-        <dependency>
-            <groupId>ua.org.olden</groupId>
-            <artifactId>SumeriansBabylon</artifactId>
-            <version>1.0</version>
+            <version>1.0-SNAPSHOT</version>
+            <type>jar</type>
         </dependency>
     </dependencies>
     <build>
@@ -37,7 +33,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.15.0</version>
                 <configuration>
-                    <release>11</release>
+                    <release>21</release>
                 </configuration>
             </plugin>
             <plugin>
