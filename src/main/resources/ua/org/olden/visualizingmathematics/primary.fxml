@@ -33,7 +33,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Допомога">
             <items>
-              <MenuItem mnemonicParsing="false" text="Про…" />
+              <MenuItem mnemonicParsing="false" onAction="#about" text="Про…" />
             </items>
           </Menu>
         </menus>
