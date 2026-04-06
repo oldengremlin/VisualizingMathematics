@@ -5,6 +5,8 @@
 package ua.org.olden.visualizingmathematics;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -14,8 +16,11 @@ import javafx.fxml.FXML;
 public class AboutController {
 
     @FXML
+    private Button closeBtn;
+
+    @FXML
     private void close() {
-        App.quit();
+        ((Stage) closeBtn.getScene().getWindow()).close();
     }
 
 }

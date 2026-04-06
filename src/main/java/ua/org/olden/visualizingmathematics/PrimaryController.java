@@ -3,7 +3,10 @@ package ua.org.olden.visualizingmathematics;
 import java.io.IOException;
 import java.util.regex.Pattern;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
+import javafx.scene.control.Dialog;
+import javafx.scene.control.DialogPane;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -65,6 +68,16 @@ public class PrimaryController {
     @FXML
     private void quit() {
         App.quit();
+    }
+
+    @FXML
+    private void about() throws IOException {
+        FXMLLoader loader = new FXMLLoader(App.class.getResource("about.fxml"));
+        DialogPane dialogPane = loader.load();
+        Dialog<Void> dialog = new Dialog<>();
+        dialog.setDialogPane(dialogPane);
+        dialog.initOwner(value_a.getScene().getWindow());
+        dialog.show();
     }
 
     @FXML
