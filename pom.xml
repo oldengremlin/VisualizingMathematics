@@ -138,4 +138,9 @@
             </plugin>
         </plugins>
     </build>
+    <scm>
+        <connection>scm:git:https://github.com</connection>
+        <developerConnection>scm:git@github.com:oldengremlin/VisualizingMathematics.git</developerConnection>
+        <url>https://github.com/oldengremlin/VisualizingMathematics</url>
+    </scm>
 </project>
